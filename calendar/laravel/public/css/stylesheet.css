@@ -1,0 +1,367 @@
+body {
+    margin-top:0;
+    margin-bottom:0;
+    margin-right:0;
+    margin-left:0;
+    width:auto;
+    background:#edf0f1;
+    padding:80px,0,0,0; 
+    
+    
+}
+
+
+.noFill {
+    fill:none;
+}
+
+.header-habits {
+    width:100%;
+    height:80px;
+ 
+    padding:15px;
+    top:0;
+    left:0;
+    background: #50bfe6;
+    box-shadow:8px 2px 8px rgba(44, 62, 80, 0, 15);
+    }
+
+.header-habits input {
+    width:100%;
+    height:50px;
+    float:left;
+    color:#fff;
+    font-size:15px;
+    font-weight:400;
+    text-indent:18px; 
+    padding:0 60px 0 0; 
+    background:rgba(255,255,255,0.2);
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border:0px;
+    box-shadow:none;
+    outline:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    -o-appearance:none;
+    appearance:none;
+}
+
+.header-habits #add {
+    width:50px;
+    height:50px;
+    position:relative;
+    top:-50px;
+    float:right;
+    border-radius:5px;
+    background:#fff;
+    border:0px;
+    box-shadow:none;
+    outline:none;
+    cursor:pointer;
+    
+    
+}
+  
+
+.header-habits input::-webkit-input-placeholder {
+    color:rgba(255,255,255,0,75);
+}
+
+.header-habits input::-moz-input-placeholder {
+    color:rgba(255,255,255,0,75);
+}
+
+.header-habits input::-moz-input-placeholder {
+    color:rgba(255,255,255,0,75);
+}
+
+.header-habits input::-ms-input-placeholder {
+    color:rgba(255,255,255,0,75);
+}
+
+.container {
+    width:100%;
+    float:left;
+    padding:15px;
+}
+
+ul.habits {
+    width:100%;
+    float:left;
+}
+
+ul.habits li {
+    width:100%;
+    min-height:50px;
+    float:left;
+    font-size:14px;
+    font-weight:500;
+    color:#444;
+    line-height:22px;
+    background:#fff;
+    border-radius:5px;
+    position:relative;
+    box-shadow:0px 1px 2px rgba(44,62,80,0,10);
+    margin:0 0 10px 0;
+    padding:14px 100px 14px 14px;
+}
+
+il.habits li:last-of-type {
+    margin:0;
+}
+
+ul.habits li .buttons {
+    width:100px;
+    height:50px;
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+ul.habits li .buttons button {
+    width:50px;
+    height:50px;
+    float:left;
+    background:none;
+    position:relative;
+    border:0px;
+    box-shadow:none;
+    outline:none;
+    cursor:pointer;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    -o-appearance:none;
+    appearance:none;
+}
+
+ul.habits li .buttons a {
+    width:50px;
+    height:50px;
+    float:left;
+    background:none;
+    position:relative;
+    border:0px;
+    box-shadow:none;
+    outline:none;
+    cursor:pointer;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    -o-appearance:none;
+    appearance:none;
+}
+
+ul.habits li .buttons button:last-of-type:before {
+
+    content:'';
+    width:1px;
+    height:30px;
+    position:absolute;
+    top:10px;
+    left:0;
+    background:#edf0f1;
+}
+
+ul.habits li .buttons a:last-of-type:before {
+
+    content:'';
+    width:1px;
+    height:30px;
+    position:absolute;
+    top:10px;
+    left:0;
+    background:#edf0f1;
+}
+
+.header-habits #add svg {
+    width:16px;
+    height:16px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-8px 0 0 -8px;
+    
+}
+
+
+
+.header-habits #add svg .fill {
+    fill:#25b99a;
+}
+
+ul.habits li .buttons button svg {
+    width:22px;
+    height:22px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-11px 0 0 -11px;
+}
+
+ul.habits li .buttons a svg {
+    width:22px;
+    height:22px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-11px 0 0 -11px;
+}
+
+
+
+
+ul.habits#completed li .buttons button.complete svg {
+    background:#25b99a;
+    border:0px;
+   
+}
+
+ul.habits#completed li .buttons a.complete svg {
+    background:#25b99a;
+    border:0px;
+   
+}
+
+ul.habits#completed li .buttons a.complete svg {
+    color:#fcf8e3;
+    border:0px;
+   
+}
+
+
+
+
+ul.habits:not(#completed) li .buttons button.complete:hover svg {
+    background:rgba(37,185,154,0.1);
+}
+
+ul.habits:not(#completed) li .buttons a.complete:hover svg {
+    background:rgba(37,185,154,0.1);
+}
+
+ul.habits:not(#completed) li .buttons button.complete:hover svg {
+    fill:#fff;
+}
+
+ul.habits:not(#completed) li .buttons a.complete:hover svg {
+    fill:#fff;
+}
+
+ul.habits#completed li .buttons button.complete svg .fill {
+   fill:#fff; 
+}
+
+ul.habits#completed li .buttons a.complete svg .fill {
+    fill:#fff; 
+ }
+
+
+ul.habits li .buttons button.complete svg {
+    border-radius:11px;
+    border:1.5px solid #25b99a;
+     transition:background 0.2s ease;
+    
+    -webkit-transition:background 0.2s ease;
+    -moz-transition:background 0.2s ease;
+    -ms-transition:background 0.2s ease;
+    -o-transition:background 0.2s ease;
+}
+
+ul.habits li .buttons a.complete svg {
+    border-radius:11px;
+    border:1.5px solid #25b99a;
+     transition:background 0.2s ease;
+    
+    -webkit-transition:background 0.2s ease;
+    -moz-transition:background 0.2s ease;
+    -ms-transition:background 0.2s ease;
+    -o-transition:background 0.2s ease;
+}
+
+ul.habits li .buttons a.completehabit svg {
+    border-radius:11px;
+    border:1.5px solid #fcf8e3;
+     transition:background 0.2s ease;
+    
+    -webkit-transition:background 0.2s ease;
+    -moz-transition:background 0.2s ease;
+    -ms-transition:background 0.2s ease;
+    -o-transition:background 0.2s ease;
+}
+
+
+ul.habits li .buttons button svg .fill {
+    transition:fill 0.2s ease; 
+
+    -webkit-appearance:fill 0.2s ease;
+    -moz-appearance:fill 0.2s ease;
+    -ms-appearance:fill 0.2s ease;
+    -o-appearance:fill 0.2s ease;
+}
+
+ul.habits li .buttons a svg .fill {
+    transition:fill 0.2s ease; 
+
+    -webkit-appearance:fill 0.2s ease;
+    -moz-appearance:fill 0.2s ease;
+    -ms-appearance:fill 0.2s ease;
+    -o-appearance:fill 0.2s ease;
+}
+
+
+ul.habits li .buttons button.remove svg .fill {
+    fill:#c0cecb;
+}
+
+ul.habits li .buttons a.remove svg .fill {
+    fill:#c0cecb;
+}
+
+ul.habits li .buttons button.remove:hover svg .fill {
+    fill:#e85656;
+}
+
+ul.habits li .buttons a.remove:hover svg .fill {
+    fill:#e85656;
+}
+
+ul.habits li .buttons button.complete svg .fill {
+    fill:#25b99a;
+}
+
+ul.habits li .buttons a.complete svg .fill {
+    fill:#25b99a;
+}
+
+ul.habits li .buttons a.completehabit svg .fill {
+    fill:#25b99a;
+}
+
+
+ul.habits#completed:not(:empty) {
+    position:relative;
+    padding:60px 0 0 0;
+}
+
+ul.habits#completed:not(:empty):before {
+    content:'';
+    width:150px;
+    height:1px;
+    background:#d8e5e0;
+    position:absolute;
+    top:30px;
+    left:50%;
+    margin:0 0 0 -75px;
+}
+
+
+
+
+
+
+    
